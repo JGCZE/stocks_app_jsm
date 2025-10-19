@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
-import NavItems from './NavItems'
+import { NavItems, UserDropdown } from './index';
 
 const Header = () => {
   return (
@@ -14,10 +13,10 @@ const Header = () => {
           <NavItems />
         </nav>
 
-        {/* USer dropdown */}
+        <UserDropdown />
       </div>
     </header>
   )
 }
 
-export default Header
+export default Header;
