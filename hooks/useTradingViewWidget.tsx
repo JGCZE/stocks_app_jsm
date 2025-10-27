@@ -23,7 +23,7 @@ const useTradingViewWidget = (scriptUrl: string, config: Record<string, unknown>
         delete containerRef.current.dataset.loaded;
       }
     }
-  }, [ scriptUrl, config, height ])
+  }, [scriptUrl, config, height])
 
   return containerRef;
 }
